@@ -1,0 +1,115 @@
+body{  background-size: cover; /* This will make the background image cover the entire element */
+  background-repeat: no-repeat; /* This prevents the background image from repeating */
+  background-position: center; /* This centers the background image within the element */
+  width: 100vw; /* Set the width of the element to 100% of the viewport width */
+  height: 180vh; 
+   /* Adjust this value based on your navbar height */
+ font-family: Arial, sans-serif;
+background-image:url(https://images.unsplash.com/photo-1602975726807-6b4015d981cf?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+} 
+ .form{
+   margin-top:150px;
+ }
+.navbar{
+  position: fixed;
+  top: 0;
+}
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+   
+}
+.form-floating{
+  margin:20px 0px 2px 490px;
+align-items: center;
+width: 500px;
+margin-bottom: 20px;
+border-width:20px;
+}
+#language{
+  margin:20px 0px 2px 0px;
+  align-items: center;
+  width: 500px;
+   border-radius:20px;
+ height:50px;
+ padding-left:10px;
+  }
+
+.form-control{
+border-radius: 200px !important;
+
+}
+
+.center{
+align-items: center !important;
+}
+
+#submit{
+font-weight: 600;
+border-radius:20px;
+height:40px;
+width:120px;
+color:#0c00ff;
+margin:30px 80px 0px 580px;
+  background-color:black;
+ 
+
+}
+#submit:hover{
+ transform:scale(0.96);
+ background-color:white;
+ font-size:20px;
+}
+
+.reset{
+font-weight: 600;
+border-radius:20px;
+height:40px;
+width:120px;
+color:#0c00ff;
+margin-top:00px;
+margin-right: 32px;
+margin-left:0px;
+}
+
+.form-floating-1{
+  margin:30px 0px 0px 0px;
+  padding:40px 0px 0px 0px;
+}
+
+.checkk{
+ font-size:20px ;
+ color: rgb(255 0 0);
+ font-weight:900;
+ margin:50px 0px 0px 500px;
+}
+
+#check{
+ margin-left:3px;
+ height:60px;
+ width:30px;
+ 
+}
+ #check:checked + #yo{
+ 
+  color:green;
+ 
+
+}
+.form-floating input,span,.reset,#check,#submit,#language {
+  transform-origin: bottom center;
+  animation: slideIn 01s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(100px); /* Adjust the starting point as needed */
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 0.7;
+  }
+}
+

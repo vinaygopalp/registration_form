@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mini-project-2</title>
+    <link href="{{url_for('static',filename='css/index.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NAVBAR  STARTING-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">photo_v_phactory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            >
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR ENDING -->
+
+    <form class="form" action="/registration" method="post" onsubmit="">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Name" name="name" required>
+            <label for="floatingInput">Name</label>
+        </div>
+
+
+        <div class="form-floating mb-3 ">
+            <input type="email" class="form-control" aria-describedby="emailHelp" name="email"
+                placeholder="Email address" required>
+            <label for="floatingInput">Email address</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" class="form-control" placeholder="Password" name="password"
+                pattern="^(?=.*\d)(?=.*[!@#$%^&*(),.?)(?=.*[a-zA-Z]).{8,}$" required>
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="date" class="form-control" placeholder="Date of birth" name="dob" required>
+            <label for="floatingdate">Date of birth</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="tel" class="form-control" name="cont" pattern="[0-9]{10}" placeholder="contact" required>
+            <label for="floatingPassword">contact number</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" name="address" required placeholder="Password">
+            <label for="floatingPassword">Address</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" name="state" placeholder="State" required>
+            <label for="floatingPassword">State</label>
+        </div>
+
+        <div class="form-floating">
+            <select id="language" name="lang" required>
+                <option value="" selected disabled>Select a language</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c++" >C++</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+        <div class="checkk"> <input type="checkbox" id="check" required><span id="yoo">I hereby declare all information mentioned
+                above are correct</span><br></div>
+
+
+        <input id="submit" onclick="showThankYouMessage()" type="submit">
+        <input class="reset" type="reset">
+
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function showThankYouMessage() {
+            alert('Are you sure you want to submit!');
+        }
+    </script>
+</body>
+
+</html>
